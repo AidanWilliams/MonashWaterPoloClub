@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106972172-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106972172-3');
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(function() {
+      $("#navigation").load("/navigation.html");
+  });
+  $(function() {
+      $("#chat").load("/chat.html");
+  });
+  </script>
+
+
+<title>Monash Uni Water Polo Club</title>
+<link rel="icon" href="/images/logo.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+#map {
+   height: 400px;  /* The height is 400 pixels */
+   width: 100%;  /* The width is the width of the web page */
+  }
+
+
+
+ h2 {
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  h1 {
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    font-size: 80px;
+  }
+
+</style>
+</head>
+<body>
+
+<div id="chat"></div>
+
+
+  <!-- Banner Section -->
+  <div class="w3-display-container w3-center" id="Banner">
+    <img src="/images/banners.jpg" width="100%" class="w3-hide-large w3-hide-medium">
+    <img src="/images/banner.jpg" width="100%" class="w3-hide-small">
+
+  </div>
+
+
+  <!-- Navbar -->
+  <div id="navigation"></div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px; padding: 0 0">
+
+  <div class="w3-container w3-content w3-center " style="max-width:90%; padding: 20px 5%" id="band">
+    <h1 class="w3-wide w3-hide-small">Committe</h1>
+    <h2 class="w3-wide w3-hide-medium w3-hide-large">Committe</h2>
+    <hr>
+  </div>
+
+
+  <!-- The Band Section -->
+<div class="w3-content w3-center w3-hide-small" style=" padding: 20px 0" id="soical">
+    <h2 class="w3-wide">Board Members</h2>
+
+  <div class="w3-row w3-center" style="padding: 30px 0">
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4" >
+        <div class="w3-card" style="width:100%; height:400px">
+          <img src="zoe.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Zoe Lysaght</b></h4>
+            <p>President</p>
+            <p><a href="https://www.facebook.com/messages/t/zoe.lysaght" target="_blank">Message</a> | <a href="mailto:info@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; height:400px">
+          <img src="har.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Harriet Mason</b></h4>
+            <p>Vice President</p>
+            <p><a href="https://www.messenger.com/t/harriet.mason.3576" target="_blank">Message</a> | <a href="mailto:info@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; height:400px">
+          <img src="zac.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Zac Evangelides</b></h4>
+            <p>Secretary</p>
+            <p><a href="https://www.messenger.com/t/zac.evangelides" target="_blank">Message</a> | <a href="mailto:info@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; height:400px">
+          <img src="sof.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Sophie Rayne</b></h4>
+            <p>Treasurer</p>
+            <p><a href="https://www.messenger.com/t/sophiee.rayne" target="_blank">Message</a> | <a href="mailto:treasurer@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-center" style="padding: 3% 0">
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Dean Van Huizen</b></h4>
+            <p>Junior Development  </p>
+            <p class=""><a href="mailto:juniors@monashuniwaterpolo.com.au" target="_blank">Email</a></p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Mark Goy</b></h4>
+            <p>Social Media Officer</p>
+            <p><a href="https://www.messenger.com/t/Goyboy" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Aidan Williams</b></h4>
+            <p>IT Officer</p>
+            <p><a href="https://www.messenger.com/t/Aidanl97" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Jason Vincent</b></h4>
+            <p>Coaching Coordinator</p>
+            <p><a href="https://www.messenger.com/t/jason.v.tran.3" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-center" style="padding: 3% 0">
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Katrina Pandey</b></h4>
+            <p>Social Events </p>
+            <p><a href="https://www.messenger.com/t/katrina.pandey" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Charlie Bidgood</b></h4>
+            <p>Student Representative</p>
+            <p><a href="https://www.messenger.com/t/onetruebidgod" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Sophie Rayne</b></h4>
+            <p>Student Representative</p>
+            <p><a href="https://www.messenger.com/t/sophiee.rayne" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Iain Scott</b></h4>
+            <p>Parents Representative</p>
+            <p class="w3-text-white">.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- -->
+
+<div class="w3-content w3-center w3-hide-medium w3-hide-large" style=" padding: 20px 0" id="soical">
+    <h2 class="w3-wide">Board Members</h2>
+
+  <div class="w3-row w3-center" style="padding: 30px 0">
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4" >
+        <div class="w3-card" style="width:100%; ">
+          <img src="kai.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Kai-Yang Goh</b></h4>
+            <p>President</p>
+            <p><a href="https://www.messenger.com/t/CptKYG" target="_blank">Message</a> | <a href="mailto:info@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <img src="lara.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Lara Calligaro</b></h4>
+            <p>Vice President</p>
+            <p><a href="https://www.messenger.com/t/lara.calligaro.5" target="_blank">Message</a> | <a href="mailto:info@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <img src="zac.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Zac Evangelides</b></h4>
+            <p>Secretary</p>
+            <p><a href="https://www.messenger.com/t/zac.evangelides" target="_blank">Message</a> | <a href="mailto:treasurer@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%;">
+          <img src="har.jpg" alt="Person" style="width:100%">
+          <div class="w3-container">
+            <h4><b>Harriet Mason</b></h4>
+            <p>Treasurer</p>
+            <p><a href="https://www.messenger.com/t/harriet.mason.3576" target="_blank">Message</a> | <a href="mailto:treasurer@monashuniwaterpolo.com.au" target="_blank">Email</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-center" style="padding: 3% 0">
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Dean Van Huizen</b></h4>
+            <p>Junior Development  </p>
+            <p class="w3-text-white">.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Mark Goy</b></h4>
+            <p>Social Media Officer</p>
+            <p><a href="https://www.messenger.com/t/Goyboy" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Aidan Williams</b></h4>
+            <p>IT Officer</p>
+            <p><a href="https://www.messenger.com/t/Aidanl97" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Jason Vincent</b></h4>
+            <p>Coaching Coordinator</p>
+            <p><a href="https://www.messenger.com/t/jason.v.tran.3" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w3-row w3-center" style="padding: 3% 0">
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Katrina Pandey</b></h4>
+            <p>Social Events </p>
+            <p><a href="https://www.messenger.com/t/katrina.pandey" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Charlie Bidgood</b></h4>
+            <p>Student Representative</p>
+            <p><a href="https://www.messenger.com/t/onetruebidgod" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Sophie Rayne</b></h4>
+            <p>Student Representative</p>
+            <p><a href="https://www.messenger.com/t/sophiee.rayne" target="_blank">Message</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-quarter w3-container " style="padding: 0 25px 10px 25px">
+      <div class="w3-card-4">
+        <div class="w3-card" style="width:100%; ">
+          <div class="w3-container">
+            <h4><b>Iain Scott</b></h4>
+            <p>Parents Representative</p>
+            <p class="w3-text-white">.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<!--The div element for the map -->
+<div style="margin-top:10px;  padding: 0">
+  <div class="w3-display-container w3-center" >
+    <img src="board.jpg" width="100%" height="" class="">
+  </div>
+</div>
+
+
+<div class="w3-content w3-center" style=" padding: 20px 5%" id="soical">
+  <h2 class="w3-wide w3-center">Meeting Minutes</h2>
+
+<div class=" w3-hover-border-black w3-border" style="margin:20px 0">
+<button onclick="myFunctiona('2018')" class="w3-btn  w3-block  w3-hover-none">
+<h5>2018</h5>
+
+<div id="2018" class="w3-hide w3-container w3-center w3-hover-none " style="padding:0 0 20px 0 ">
+  <center>
+  <table class="w3-table-all w3-center" style="width:40%; ">
+    <tr>
+      <th class="w3-center">Meeting Date</th>
+      <th class="w3-center">Minutes</th>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">21st of January</td>
+      <td class="w3-center"><a href="minutes2018/21.1.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">25th of February</td>
+      <td class="w3-center"><a href="minutes2018/25.2.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">18th of	March</td>
+      <td class="w3-center"><a href="minutes2018/18.3.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">29th of	April</td>
+      <td class="w3-center"><a href="minutes2018/29.4.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">27th of May</td>
+      <td class="w3-center"><a href="minutes2018/27.5.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">24th of June</td>
+      <td class="w3-center"><a href="minutes2018/24.6.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">30th of	July</td>
+      <td class="w3-center"><a href="minutes2018/30.7.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">26th of August</td>
+      <td class="w3-center"><a href="minutes2018/26.8.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">30th of September</td>
+      <td class="w3-center"><a href="minutes2018/30.9.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">25th of November</td>
+      <td class="w3-center"><a href="minutes2018/25.11.18-Minutes.docx" target="_blank">docx</a></td>
+    </tr>
+
+  </table>
+  </center>
+</div>
+</button>
+</div>
+
+<div class="w3-hover-border-black w3-border " style="margin:20px 0">
+<button onclick="myFunctiona('2019')" class="w3-btn  w3-block  w3-hover-none">
+<h5>2019</h5>
+
+<div id="2019" class="w3-hide w3-container w3-center w3-hover-none " style="padding:0 0 20px 0 ">
+  <center>
+  <table class="w3-table-all w3-center" style="width:40%; ">
+    <tr>
+      <th class="w3-center">Meeting Date</th>
+      <th class="w3-center">Minutes</th>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">27th of January</td>
+      <td class="w3-center"><a href="minutes2019/27.01.19-Minutes.pdf" target="_blank">PDF</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">24th of February</td>
+      <td class="w3-center"><a href="minutes2019/24.02.19-Minutes.pdf" target="_blank">PDF</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">31st of March</td>
+      <td class="w3-center"><a href="minutes2019/24.03.19-Minutes.pdf" target="_blank">PDF</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">28th of April</td>
+      <td class="w3-center"><a href="minutes2019/24.04.19-Minutes.pdf" target="_blank">PDF</a></td>
+    </tr>
+    <tr>
+      <td class="w3-center" class="w3-center">26th of May</td>
+      <td class="w3-center"><a href="minutes2019/26.05.19-Minutes.pdf" target="_blank">PDF</a></td>
+    </tr>
+  </table>
+  <p>Missing? <a href="/contact-us">Contact Us</a> for any meeting minutes we haven't yet put up here</p>
+  </center>
+</div>
+</button>
+</div>
+
+</div>
+<script>
+function myFunctiona(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<div class="w3-content w3-center " style=" padding: 20px 0" id="soical">
+  <h2 class="w3-wide">Club Constitution</h2>
+  <h3><a href="Monash-Club-Constitution.doc" >Download Here</a></h3>
+</div>
+
+
+  <!-- End Page Content -->
+  </div>
+
+
+
+
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+</script>
+
+</body>
+</html>
