@@ -1,16 +1,41 @@
 <html>
 <body>
+<style>
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  #navbar {
+    min-height: 48px;
+  }
+  
+  #navbar a {
+    display: block;
+  }
+    
+  .sticky {
+    position: fixed;
+  }
 
-
-  <div class="nav">
-    <div class="w3-bar w3-white w3-card " >
-      <a class="w3-bar-item w3-button w3-padding-16 w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <div class="w3-hide-small" style="padding-left:50px"><a href="/" class="w3-bar-item w3-padding"><img src="/images/logo.png" alt="logo" class="w3-image w3-hover-grayscale w3-hover-opacity" style="max-width:30px"></a></div>
-      <div class="w3-hide-large w3-hide-medium " style="padding: 5px 10px 0 20px"><h5> Moansh Uni Water Polo Club</h5></div>
-      <a href="/join-us" class="w3-bar-item w3-button w3-padding-large w3-hide-small">JOIN US</a>
-      <a href="/committee" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COMMITTEE</a>
+  #navitem {
+    font-family: Gotham,sans-serif;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+</style>
+  <!-- Navbar on big screens -->
+  <div class="w3-white w3-hide-small" style="height: 90px"></div>
+  <div class="nav w3-hide-small"  >
+    <div class="w3-bar w3-white w3-card " id="navbar" style="height: 90px; position: fixed; top: 0;">
+     
+      <div class="w3-hide-small" style="padding-left:100px"><a href="/" class="w3-bar-item w3-padding"><img src="/images/logo.png" alt="logo" class="w3-image w3-hover-grayscale w3-hover-opacity" style="max-width:70px"></a></div>
+      <a id="navitem" href="/join-us" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="font-size: 20px; margin-top:20px">JOIN US</a>
+      <a id="navitem" href="/committee" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="font-size: 20px; margin-top:20px" >COMMITTEE</a>
       <div class="w3-dropdown-hover w3-hide-small ">
-        <button class="w3-padding-large w3-button" href="committee.html" title="More">SOCIAL EVENTS <i class="fa fa-caret-down"></i></button>
+        <button id="navitem" class="w3-padding-large w3-button" href="committee.html" title="More"  style="font-size: 20px; margin-top:20px">SOCIAL EVENTS <i class="fa fa-caret-down"></i></button>
           <div class="w3-dropdown-content w3-bar-block w3-card-4" >
             <a href="/socialevents/oweekcrawl" class="w3-bar-item w3-button" >O Week Crawl</a>
             <a href="/socialevents/juniorseasonbbq" class="w3-bar-item w3-button">End of Junior BBQ</a>
@@ -23,7 +48,7 @@
           </div>
       </div>
       <div class="w3-dropdown-hover w3-hide-small ">
-        <button class="w3-padding-large w3-button" title="More">COMPETITION INFO <i class="fa fa-caret-down"></i></button>
+        <button id="navitem" class="w3-padding-large w3-button" title="More"  style="font-size: 20px; margin-top:20px">COMPETITION INFO <i class="fa fa-caret-down"></i></button>
           <div class="w3-dropdown-content w3-bar-block w3-card-4">
             <a href="/competition-info#pier" class="w3-bar-item w3-button">Polo by the Pier</a>
             <a href="/competition-info#splash" class="w3-bar-item w3-button">Summer Splash</a>
@@ -34,13 +59,13 @@
           </div>
       </div>
       <div class="w3-dropdown-hover w3-hide-small ">
-        <button class="w3-padding-large w3-button" title="More">JUNIORS <i class="fa fa-caret-down"></i></button>
+        <button id="navitem" class="w3-padding-large w3-button" title="More"  style="font-size: 20px; margin-top:20px">JUNIORS <i class="fa fa-caret-down"></i></button>
           <div class="w3-dropdown-content w3-bar-block w3-card-4">
             <a href="/jrtryday" class="w3-bar-item w3-button">Come Try Day</a>
           </div>
       </div>
-      <a href="https://muwpc.square.site" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STORE</a>
-      <a href="/contact-us" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
+      <a id="navitem" href="https://muwpc.square.site" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hide-small"  style="font-size: 20px; margin-top:20px">STORE</a>
+      <a id="navitem" href="/contact-us" class="w3-bar-item w3-button w3-padding-large w3-hide-small"  style="font-size: 20px; margin-top:20px">CONTACT US</a>
 
 
       <a href="http://www.facebook.com/MonashUniversityWaterPoloClub/" target="_blank" class="w3-bar-item w3-hide-small w3-right" style="padding: 9px 30px 9px 17px"><font color="#3b5998"><i class="fab fa-facebook w3-xlarge w3-center w3-hover-opacity"></i></font></a>
@@ -49,7 +74,12 @@
   </div>
 
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-card-4 w3-shadow" style="position: absolute; width:100%" >
+  <div class="w3-white w3-hide-medium w3-hide-large " style="height: 60px; width:100%;"> </div>
+  <div class="w3-white w3-hide-medium w3-hide-large" style="height: 60px; width:100%; position: fixed; top: 0;">
+  <a class="w3-bar-item w3-button w3-padding-16 w3-padding-large w3-hide-medium w3-hide-large w3-right"  href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  <div class="w3-hide-large w3-hide-medium " style="padding: 5px 10px 0 20px;"><h5> Moansh Uni Water Polo Club</h5></div>
+  </div>
+  <div id="navsmall" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-card-4" style="position: fixed; top: 0; top:60px; width:100%; box-shadow: 0px 10px 10px 0px DimGrey;" >
     <a href="/" class="w3-bar-item w3-button w3-padding-large " onclick="myFunction()">HOME</a>
     <a href="/join-us" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">JOIN US</a>
     <a href="/committee" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COMMITTEE</a>
@@ -73,5 +103,20 @@
   </div>
 
 
+
+<script>
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navsmall");
+  if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+  } else {
+      x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
 </body>
 </html>
